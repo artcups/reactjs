@@ -1,0 +1,24 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "Test av reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artcups/reactjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artcups/reactjs/issues"
+  },
+  "homepage": "https://github.com/artcups/reactjs#readme",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "lodash": "^4.6.1",
+    "webpack": "^1.12.14"
+  }
+}
