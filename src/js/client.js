@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-impo
 
 class Layout extends React.Component {
+	constructor(){
+		super();
+		this.name = this.getVal();
+	}
+	getVal(){
+		return "Seb";
+	}
 	render() {
+		const name = "Seb";
 		return (
-			<h1>It's Workings!</h1>
+			<h1>It's {this.name}!</h1>
 		);
 	}
 }
