@@ -13,6 +13,10 @@ export function bar(){
 
 }
 
+export default {
+	//blabla
+}
+
 
 
 //inside other file (before)
@@ -25,4 +29,6 @@ import myModule from "myModule";
 import { foo as foolish, bar } from "myModule";
 import { each, omit } from "lodash";
 
-console.log(foolish);
+console.log(foolish); //3
+
+//Use destrcuturing to only get the things you need from module.
