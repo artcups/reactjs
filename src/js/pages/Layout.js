@@ -1,17 +1,21 @@
 import React from "react";
-import { Link } from "react-router";
+import Footer from "../components/layout/Footer";
+import Nav from "../components/layout/Nav";
+
 export default class Layout extends React.Component {
 	navigate(){
 		this.props.history.pushState(null, "/");
 	}
 	render() {
+		const { location } = this.props;
+		const { history } = this.props;
 		return (
 			<div>
+				<Nav location={ location } history={ history } />
 				<h1>Sebbes sida</h1>
 				{this.props.children}
-				<Link to="archives"><button class="btn">Archived</button></Link>
-				<Link to="settings"><button class="btn">Settings</button></Link>
-				<button class="btn" onClick={this.navigate.bind(this)}>Featured</button>
+
+				<Footer />
 			</div>
 
 		);
