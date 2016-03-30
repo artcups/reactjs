@@ -11,7 +11,7 @@ export default class Layout extends React.Component {
 				{this.props.children}
 				<Link to="archives"><button class="btn">Archived</button></Link>
 				<Link to="settings"><button class="btn">Settings</button></Link>
-				<button onClick={this.navigate.bind(this)}>featured</button>
+				<button class="btn" onClick={this.navigate.bind(this)}>Featured</button>
 			</div>
 
 		);
